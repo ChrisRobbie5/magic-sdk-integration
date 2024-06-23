@@ -1,4 +1,4 @@
-const magic = new Magic('pk_live_4D12C5E6B1EBA960'); // Replace with your Magic Publishable API Key
+const magic = new Magic('pk_live_4D12C5E6B1EBA960'); // Replace with your actual Magic Publishable API Key
 
 document.querySelector('.connect-wallet').addEventListener('click', async () => {
   try {
