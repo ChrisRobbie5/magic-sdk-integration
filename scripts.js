@@ -2,7 +2,7 @@ const magic = new Magic('pk_live_4D12C5E6B1EBA960'); // Replace with your actual
 
 document.querySelector('.connect-wallet').addEventListener('click', async () => {
   try {
-    await magic.auth.loginWithMagicLink({ email: 'user@example.com' }); // Replace with user email or other login methods
+    await magic.auth.loginWithMagicLink({ email: 'takenlele@gmail.com' }); // Replace with user email or other login methods
     const walletInfo = await magic.user.getInfo();
     const walletType = walletInfo.walletType;
 
