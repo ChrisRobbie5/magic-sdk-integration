@@ -2,7 +2,15 @@ const magic = new Magic('pk_live_4D12C5E6B1EBA960'); // Replace with your actual
 
 document.getElementById('buy-crypto').addEventListener('click', async () => {
   try {
-    await magic.auth.loginWithMagicLink({ email: 'user@example.com' }); // Replace with actual user email or use Magic's UI
+    await magic.auth.loginWithMagicLink({ 
+magic.wallet.connectWithUI() // Simple Email OTP login form
+magic.wallet.showUI() // Full end-user wallet experience
+magic.wallet.showAddress()
+magic.wallet.showSendTokensUI()
+magic.wallet.showBalances()
+magic.wallet.showNFTs()
+magic.wallet.showOnRamp()
+' }); // Replace with actual user email or use Magic's UI
     const walletInfo = await magic.user.getInfo();
     const walletType = walletInfo.walletType;
 
